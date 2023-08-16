@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Todooly</title>
+</head>
+<body>
+    <!-- <div id="logo-area"></div> -->
+    <div id="header">
+        <h1 id="header-name">Todooly</h1>
+    </div>
+    <div id="side-bar">
+        <div id="project-selection">
+            <h1 id="project-selection-header">Projects</h1>
+            <!-- <div class="project-item">
+                <div class="project-name">HOMEWORK</div>
+                <button class="project-expand-btn">&#x2013;</button>
+            </div> -->
+            <!-- <div id="project">HOUSEWORK</div>
+            <div id="project">JOBS WORD</div>
+            <div id="project">SELF-DEVELOPMENT</div> -->
+        </div>
+        <button id="new-project-btn">NEW PROJECT</button>
+    </div>
+    <div id="main-content">
+        <h1 id="todo-project-heading">Project title</h1>
+        <button id="new-task-btn">NEW TASK</button>
+        <div id="todo-list">
+            <!-- <div class="todo-item">
+                <div class="todo-info-main">
+                    <input class="todo-check" type="checkbox">
+                    <p class="todo-title">HOMEWORK</p>
+                    <button class="todo-expand-bttn">+</button>
+                </div> -->
+                <!-- <div class="todo-info-expanded">
+                    <h3>Description</h3>
+                    <p>This is a sescription about the task. You should do stuff you wiener</p>
+                </div> -->
+            <!-- </div> -->
+             
+            <!-- <div class="todo-item">
+                <label class="todo-info-main">
+                    <input class="todo-check" type="checkbox">
+                    <p class="todo-title">HOMEWORK</p>
+                    <button class="todo-expand-bttn">+</button>
+                </label>
+            </div> -->
+        </div>
+        <div id="form-container">
+            <form action="" class="new-task-form" id="new-task-form">
+                <label for="task-name">Task:</label>
+                <input type="text" name="task-name" id="new-task-title" placeholder="task" required>
+                <label for="description-name">Description:</label>
+                <input type="text" name="description-name" id="new-description-title" placeholder="description">
+                <button type="submit" id="form-submit-btn">Add</button>
+                <!-- if I add type="button" the form does not throw error for the required fields not being entered -->
+                <button type="button" id="form-cancel-btn" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

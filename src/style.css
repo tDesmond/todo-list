@@ -1,0 +1,310 @@
+body {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+
+    font-family: monospace;
+}
+
+#header {
+    /* border: 1px solid black; */
+    background-color: #212129;
+    color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.4); */
+
+    font-size: x-large;
+    /* padding: 20px; */
+    /* align-items: center; */
+    /* margin: auto; */ 
+    /* display: block; */
+}
+
+#header-name {
+    align-self: center;
+    text-align: center;
+}
+
+#side-bar {
+    /* border: 1px solid black; */
+    background-color: #323949;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 200px auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0px 0px;
+    /* box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4); */
+}
+
+#main-content {
+    /* border: 1px solid black; */
+    background-color: #3d3e51;
+    color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: auto 200px 200px;
+    grid-template-rows: 100px auto;
+}
+
+#project-selection {
+    display: grid;
+    /* row-gap: 10px; */
+}
+
+#project-selection-header {
+    padding-left: 20px;
+    margin: 20px 0px;
+}
+
+#project-input {
+    font-size: large;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: auto 30px 30px;
+}
+#project-input > * {
+    font-size: large;
+}
+
+#project-input-text {
+    border: none;
+    /* border-bottom: 1px solid #212129; */
+    padding: 10px 0px;
+    background-color: #4c5265;
+    color: whitesmoke;
+    outline: none;
+}
+
+#create-project-btn {
+    background-color: #4CAF50;
+    color: whitesmoke;
+}
+
+#cancel-project-btn {
+    background-color: #f44336;
+    color: whitesmoke;
+}
+
+#cancel-project-btn, #create-project-btn {
+    border: none;
+}
+
+.project-item {
+    font-size: large;
+    background-color: #323949;
+    /* padding: 10px 0px; */
+    padding-left: 25px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto 25px;
+}
+
+.project-name {
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.project-item:hover {
+    /* font-size: x-large; */
+    background-color: #3d3e51;
+    /* color: gray; */
+    /* background-color: gray; */
+    /* box-shadow: 0px 0px 10px 0px #888888; */
+    /* box-shadow: 0px 0px 10px 0px #999999, 0px 0px 15px 0px #555555; */
+    /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4); */
+    /* text-decoration: underline; */
+}
+
+.project-expand-btn {
+    background-color: #212129;;
+    font-size: large;
+    border: 0px;
+    /* height: 25px; */
+}
+
+.project-expand-btn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+#new-project-btn {
+    font-size: large;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 25px;
+    /* margin-bottom: 25px; */
+    margin: 25px 25px;
+}
+
+#todo-project-heading {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#new-task-btn{
+    font-size: large;
+    border: none;
+    color: white;
+    /* padding: 10px 25px; */
+    /* margin-bottom: 25px; */
+    /* margin: 25px 25px; */
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+}
+
+#new-task-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+#new-project-btn:hover, #new-task-btn:hover, #create-project-btn:hover, #form-submit-btn:hover {
+    background-color: #70b372;
+}
+
+
+#todo-list {
+    /* border: 1px solid black; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px 0px;
+    padding-left: 50px;
+    /* display: grid; */
+    /* row-gap: 10px; */
+}
+
+.todo-item {
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+    margin: 10px 0px;
+    /* border-radius: 50px; */
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4);
+    height: fit-content;
+    font-size: large;
+    padding-left: 20px;
+    /* content: '\002B'; */
+}
+
+.todo-info-main {
+    display: grid;
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    grid-template-columns: 25px auto 50px;
+    margin: auto 0px;
+}
+
+.todo-title{
+    margin: auto 0px;
+}
+
+.todo-expand-bttn {
+    background-color: white;
+    font-size: large;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+}
+
+.todo-expand-bttn:hover {
+    background-color: whitesmoke;
+}
+
+/* .todo-item::after {   
+    content: ; 
+    float: right;
+} */
+
+.todo-info-expanded {
+    /* max-height: fit-content; */
+    padding-bottom: 20px;
+    /* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4); */
+    /* display: none; */
+    overflow: hidden;
+}
+
+
+.todo-title {
+    padding-left: 10px;
+}
+
+/* Create a custom checkbox */
+input:checked ~ .todo-title {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#form-container {
+    display: none;
+    height: fit-content;
+    width: 250px;
+    /* color: white; */
+    background-color: #323949;
+    color: whitesmoke;
+    box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 0; */
+    padding: 20px 20px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 2px #888888; */
+}
+
+#form-submit-btn {
+    background-color: #4CAF50; /* Green */
+    color: whitesmoke;
+    margin-top: 10px;
+    height: 25px;
+    border: none;
+}
+
+#form-cancel-btn {
+    background-color: #f44336; /* Green */
+    color: whitesmoke;
+    /* margin-top: 10px; */
+    height: 25px;
+    border: none;
+}
+
+#cancel-project-btn:hover, #form-cancel-btn:hover {
+    background-color: rgb(238, 85, 74);
+}
+
+
+.new-task-form {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
